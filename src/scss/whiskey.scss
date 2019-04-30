@@ -1,0 +1,443 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  // border: 1px solid red;
+}
+.navBar{
+  display: flex;
+  width: 100%;
+  height: 7vh;
+  background-color: #FFFFFF;
+  justify-content:flex-end;
+  align-items: center;
+
+}
+.hamburger-menu{
+  margin-top: 3%;
+  position: relative;
+  display: inline-block;
+}
+.mini-menu {
+  margin-top: none;
+  width: 100%;
+  height: 100%;
+  max-width: 90px;
+  max-height: 80px;
+}
+
+.hamburger-menu:hover .hide-show{
+  display: block;
+  animation: subtle 1s .5 forwards;
+}
+
+.hide-show{
+  background-color: silver;
+  display: none;
+  position: absolute;
+  width: 100%;
+  a{
+    text-decoration: none;
+  }
+  ul {
+    list-style-type: none;
+    li{
+      padding: 5%;
+      font-size: 1em;
+    }
+  }
+}
+
+
+
+.pageLanding{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 70vh;
+  margin-top: 20vh;
+    img{
+    max-width:1750px;
+    max-height: 600px;
+    position: absolute;
+    transform: scale(.4);
+    width: 130%;
+  }
+  .first{
+    animation: scribbleText 1s .9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .second{
+    animation: scribbleText 1s .6s;
+    animation-iteration-count: infinite;
+  }
+  .third{
+    animation: scribbleText 1s .3s;
+    animation-iteration-count: infinite;
+  }
+}
+
+.standAlone {
+  font-size: 2em;
+  font-weight: lighter;
+  text-align: center;
+  margin: auto;
+  margin-top: -5vw;
+  margin-bottom: 5vw;
+}
+.drinkTypes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  width: 100%;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+  font-size: 2em;
+  .drinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -5vw;
+    height: 25vw;
+    width: 25vw;
+    max-width: 420px;
+    max-height: 420px;
+    text-align: center;
+    img {
+      border-radius: 15px;
+      border: 1px solid white;
+      width:100%;
+      height: 100%;
+    }
+  }
+  .column{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-around;
+    justify-content: center;
+    width:100%;
+    h2 {
+      position: absolute;
+      color: white;
+      font-size: 2em;
+      z-index: 2;
+    }
+    .whiskey{
+      margin-right: 30%;
+    }
+    .tequila{
+      margin-right: 30%;
+    }
+    .vodka{
+      margin-left: 30%;
+    }
+    .gin{
+      margin-left: 30%;
+    }
+  }
+}
+.drinks:hover {
+  animation: hoverSize .5s forwards;
+
+}
+.topRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.bottomRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.rows{
+  animation: fadeIn .25s 0s forwards;
+  margin: auto;
+  margin-top: 20vh;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-around;
+
+}
+.button{
+  border: none;
+  font-size: 1em;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 5px;
+  padding: 3px;
+  border-radius: 5px;
+  text-decoration: underline;
+  color: grey;
+  border: 2px solid white;
+}
+
+
+.button:hover {
+  background-color: lightblue;
+  color: white;
+  border: 2px solid silver;
+  }
+.drinksWhiskey{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: none;
+}
+.drinksVodka{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: none;
+}
+
+
+// CENTER
+.centerDrink{
+  animation: center 1s 0s forwards;
+  animation-timing-function: ease;
+
+}
+.blowUps {
+  animation: blowUp 1.5s .25s forwards;
+}
+
+.ingrName {
+  opacity: 0;
+  background-color: silver;
+  padding: 2px;
+}
+
+.drinkthumb{
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 15vw;
+  height: 100%;
+  font-size: 1.3vw;
+  p{
+    max-height: 20vh;
+    font-size: 16px;
+
+  }
+}
+.cups{
+  border-bottom: 5px solid lightblue;
+  border-left: 5px solid lightblue;
+  border-right: 5px solid lightblue;
+  width: 100%;
+  height: 20vh;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.back{
+  margin-top:8vw;
+  margin-bottom: 5vw;
+  display:none;
+}
+
+
+// WHISKEY DRINKS
+
+.containerWhiskey{
+  display: flex;
+  flex-direction: column;
+}
+
+// OLD FASHIONED
+.ingredient1{
+  width: 100%;
+  height: 10%;
+  background-color: #cc0000;
+}
+.ingredient2{
+  width: 100%;
+  height: 10%;
+  background-color: #fffae9;
+}
+.ingredient3{
+  width: 100%;
+  height: 10%;
+  background-color: #993300;
+}
+.ingredient4{
+  width: 100%;
+  height: 10%;
+  background-color: orange;
+}
+.ingredient5{
+  width: 100%;
+  height: 50%;
+  background-color: #d4a30c;
+}
+
+// WHISKEY SOUR
+.w-s1{
+  width: 100%;
+  height: 15%;
+  background-color: #fffae9;
+}
+.w-s2{
+  width: 100%;
+  height: 25%;
+  background-color: yellow;
+}
+.w-s3{
+  width: 100%;
+  height: 50%;
+  background-color: #d4a30c;
+}
+// MANHATTAN
+.man-1{
+  width: 100%;
+  height: 10%;
+  background-color: #993300;
+}
+.man-2{
+  width: 100%;
+  height: 25%;
+  background-color: #ccffcc;
+}
+.man-3{
+  width: 100%;
+  height: 50%;
+  background-color: #d4a30c;
+}
+// MINT JULEP
+.m-j1{
+  // animation: di 1s forwards;
+  width: 100%;
+  height: 5%;
+  background-color: lightblue;
+}
+.m-j2{
+  // animation: di3 1s forwards;
+  width: 100%;
+  height: 5%;
+  background-color: green;
+}
+.m-j3{
+  // animation: di3 1s forwards;
+  width: 100%;
+  height: 12.5%;
+  background-color: #fffae9;
+}
+.m-j4{
+  // animation: di3 1s forwards;
+  width: 100%;
+  height: 25%;
+  background-color: #0099ff;
+}
+.m-j5{
+  width: 100%;
+  height: 45%;
+  background-color: #d4a30c;
+}
+
+
+// VODKA DRINKS
+// COSMO
+.cosmo1{
+  width: 100%;
+  height: 10%;
+  background-color: #ffcc66;
+}
+.cosmo2{
+  width: 100%;
+  height: 10%;
+  background-color: limegreen;
+}
+.cosmo3{
+  width: 100%;
+  height: 17.5%;
+  background-color: red;
+}
+.cosmo4{
+  width: 100%;
+  height: 50%;
+  background-color: #e6f7ff;
+}
+// SEX ON THE Beach
+.sex1{
+  width: 100%;
+  height: 18%;
+  background-color: pink;
+}
+.sex2{
+  width: 100%;
+  height: 18%;
+  background-color: purple;
+}
+.sex3{
+  width: 100%;
+  height: 18%;
+  background-color: orange;
+}
+.sex4{
+  width: 100%;
+  height: 18%;
+  background-color: yellow;
+}
+.sex5{
+  width: 100%;
+  height: 18%;
+  background-color: pink;
+}
+// LEMON Drop
+.lemon-1{
+  width: 100%;
+  height: 23%;
+  background-color: #e6f7ff;
+}
+.lemon-2{
+  width: 100%;
+  height: 23%;
+  background-color: #ffcc66;
+}
+.lemon-3{
+  width: 100%;
+  height: 23%;
+  background-color: #fffae9;
+}
+.lemon-4{
+  width: 100%;
+  height: 23%;
+  background-color: yellow;
+}
+// MOSCOW MULE
+.moscow1{
+  width: 100%;
+  height: 30%;
+  background-color: pink;
+}
+.moscow2{
+  width: 100%;
+  height: 30%;
+  background-color: pink;
+}
+.moscow3{
+  width: 100%;
+  height: 30%;
+  background-color: pink;
+};

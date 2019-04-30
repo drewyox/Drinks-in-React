@@ -1,17 +1,17 @@
 import React from 'react';
-import TicketList from './TicketList';
-import Header from './Header';
+import Home from './Home';
 import { Switch, Route } from 'react-router-dom';
-import NewTicketForm from './NewTicketForm';
+import Navbar from './Navbar';
+import Whiskey from './Whiskey';
 import Error404 from './Error404';
 
 function App(){
   return (
     <div>
-      <Header/>
+      <Navbar/>
       <Switch>
-        <Route exact path='/' component={TicketList} />
-        <Route exact path='/newticket' component={NewTicketForm} />
+        <Route exact path='/' component={Home} />
+        <Route exact path='/whiskey' component={Whiskey} />
         <Route component={Error404}/>
       </Switch>
       <h1 style={{height: '50px'}}></h1>
